@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="16dp"
+    tools:context=".view.editCustomer">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+        <TextView
+            android:gravity="center_horizontal"
+            android:layout_margin="20dp"
+            android:textSize="30dp"
+            android:text="Edit Customer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <!-- CustomerID (not editable) -->
+        <EditText
+            android:id="@+id/editTextCustomerID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Customer ID"
+            android:enabled="false"/>
+
+        <!-- CustomerFirstName -->
+        <EditText
+            android:id="@+id/editTextCustomerFirstName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="First Name"/>
+
+        <!-- CustomerLastName -->
+        <EditText
+            android:id="@+id/editTextCustomerLastName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Last Name"/>
+
+        <!-- CustomerDateOfBirth -->
+        <EditText
+            android:id="@+id/editTextCustomerDateOfBirth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Date of Birth"
+            android:focusable="false"
+            android:clickable="true"
+            android:inputType="none" />
+
+        <!-- CustomerAddress -->
+        <EditText
+            android:id="@+id/editTextCustomerAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Address"/>
+
+        <!-- CustomerSuburb -->
+        <EditText
+            android:id="@+id/editTextCustomerSuburb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Suburb"/>
+
+        <!-- CustomerCity -->
+        <EditText
+            android:id="@+id/editTextCustomerCity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="City"/>
+
+        <!-- CustomerZIP -->
+        <EditText
+            android:id="@+id/editTextCustomerZIP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="ZIP"/>
+
+
+
+        <!-- Save Button -->
+        <Button
+            android:onClick="btnUpdate"
+            android:id="@+id/btnUpdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="UPDATE"/>
+        <Button
+            android:onClick="btnDelete"
+            android:id="@+id/btnDelete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DELETE"/>
+        <Button
+            android:onClick="btnCancel"
+            android:id="@+id/btnCancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CANCEL"/>
+
+    </LinearLayout>
+
+</ScrollView>
